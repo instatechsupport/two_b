@@ -8,3 +8,5 @@ two_b.patches.custom_fields.quotation_item
 two_b.patches.custom_fields.quotations
 two_b.patches.custom_fields.sales_order
 two_b.patches.custom_fields.sales_order_item
+two_b.patches.custom_fields.delivery_note
+two_b.patches.custom_fields.delivery_note_item
