@@ -20,24 +20,7 @@ def execute():
                 is_virtual=1,
                 depends_on="eval: doc.last_scanned_warehouse"
             ),
-            dict(
-                fieldname="alternative_total",
-                label="Alternative Total",
-                fieldtype="Data",
-                insert_after="bigtotal",
-                read_only=1,
-                is_system_generated=1
-            ),
 
-            dict(
-                fieldname="total_in_currency",
-                label="Total in Currency",
-                fieldtype="Float",
-                insert_after="total",
-                read_only=1,
-                is_system_generated=1
-            ),
-            
             dict(
                 fieldname="disable_rounded_total",
                 label="Disable Rounded Total",
