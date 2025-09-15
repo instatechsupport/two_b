@@ -10,6 +10,7 @@ def execute():
                 insert_after="scan_barcode",
                 is_virtual=1,
                 depends_on="eval: doc.last_scanned_warehouse",
+                allow_on_submit=1,
                 is_custom_field=1
             )
         ]
