@@ -9,6 +9,7 @@ def execute():
                 fieldtype="Currency",
                 insert_after="discount_amount",
                 options="currency",
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -19,6 +20,7 @@ def execute():
                 reqd=1,
                 in_list_view=1,
                 options="currency",
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -28,6 +30,7 @@ def execute():
                 insert_after="col_break3",
                 default="1",
                 precision=4,
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -35,12 +38,14 @@ def execute():
                 label="Available Quantity",
                 fieldtype="Section Break",
                 insert_after="column_break_69",
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
                 fieldname="column_break_jpky",
                 fieldtype="Column Break",
                 insert_after="actual_qty",
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -50,6 +55,7 @@ def execute():
                 insert_after="column_break_jpky",
                 no_copy=1,
                 read_only=1,
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -58,6 +64,7 @@ def execute():
                 fieldtype="Section Break",
                 insert_after="column_break_ihdh",
                 read_only=1,
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -67,6 +74,7 @@ def execute():
                 insert_after="accounting_dimensions_section",
                 options="Cost Center",
                 default=":Company",
+				allow_on_submit=1,
                 columns="120px",
                 is_custom_field=1
             ),
@@ -74,6 +82,7 @@ def execute():
                 fieldname="column_break_ihdh",
                 fieldtype="Column Break",
                 insert_after="cost_center",
+				allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -82,6 +91,7 @@ def execute():
                 fieldtype="Link",
                 insert_after="column_break_ihdh",
                 options="Project",
+				allow_on_submit=1,
                 is_custom_field=1
             )
         ]
