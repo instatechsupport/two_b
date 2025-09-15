@@ -10,6 +10,7 @@ def execute():
                 insert_after="skip_delivery_note",
                 default="0",
                 no_copy=1,
+                allow_on_submit=1,
                 is_custom_field=1
             ),
             dict(
@@ -19,6 +20,7 @@ def execute():
                 insert_after="scan_barcode",
                 is_virtual=1,
                 depends_on="eval: doc.last_scanned_warehouse",
+				allow_on_submit=1,
                 is_custom_field=1
             )
         ]
